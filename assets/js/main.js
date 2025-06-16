@@ -31,35 +31,6 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  // Scroll-based Navigation Highlight
-  const sections = document.querySelectorAll("section");
-  const navLinks = document.querySelectorAll("nav a");
-
-  const observerOptions = {
-    root: null,
-    rootMargin: "0px",
-    threshold: 0.5,
-  };
-
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        const id = entry.target.getAttribute("id");
-        navLinks.forEach((link) => {
-          link.classList.remove("active");
-          if (link.getAttribute("href").includes(id)) {
-            link.classList.add("active");
-          }
-        });
-      }
-    });
-  }, observerOptions);
-
-  sections.forEach((section) => {
-    section.setAttribute("id", section.className);
-    observer.observe(section);
-  });
-
   // Image Lightbox
   const projectImages = document.querySelectorAll(".project-card img");
 
@@ -113,10 +84,10 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   // Add active state to current navigation item
-  const currentPage = window.location.pathname.split("/").pop();
-  const navLinksLoaded = document.querySelectorAll("nav ul li a");
+  const currentPage = window.location.pathname.split("/").pop() || "index.html";
+  const navLinks = document.querySelectorAll("nav ul li a");
 
-  navLinksLoaded.forEach((link) => {
+  navLinks.forEach((link) => {
     if (link.getAttribute("href") === currentPage) {
       link.classList.add("active");
     }
