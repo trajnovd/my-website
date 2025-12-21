@@ -1143,6 +1143,29 @@ p {
   line-height: 1.6;
 }
 
+.skill-card.main-skill {
+  border: 2px solid #20b2aa;
+  background: linear-gradient(135deg, #ffffff 0%, #f0fdfa 100%);
+}
+
+.skill-card.main-skill:hover {
+  border-color: #1a8f8a;
+  box-shadow: 0 8px 25px rgba(32, 178, 170, 0.25);
+}
+
+.main-badge {
+  display: inline-block;
+  background: #20b2aa;
+  color: white;
+  font-size: 0.7rem;
+  font-weight: 600;
+  padding: 0.2rem 0.6rem;
+  border-radius: 12px;
+  margin-left: 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
 .skills-description {
   margin: 4rem 0;
 }
