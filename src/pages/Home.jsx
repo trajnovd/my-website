@@ -127,7 +127,7 @@ export default function Home() {
             </h2>
             <p className="text-slate-400 mb-4 leading-relaxed">
               I'm a passionate developer specializing in React, Python, and
-              AI-powered solutions. Currently pursuing my Master's at the Faculty
+              AI-powered solutions. Currently pursuing my Bachelor's at the Faculty
               of Computer Science (FINKI) at Ss. Cyril and Methodius University
               in Skopje.
             </p>

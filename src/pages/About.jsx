@@ -116,7 +116,7 @@ export default function About() {
                 can solve everyday problems. That curiosity led me to the Faculty
                 of Computer Science and Information Engineering (FINKI) at Ss.
                 Cyril and Methodius University, where I'm currently pursuing my
-                Master's degree.
+                Bachelor's degree.
               </p>
               <p className="text-slate-400 leading-relaxed mb-4">
                 During my studies, I immersed myself in hackathons and coding

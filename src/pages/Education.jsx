@@ -7,10 +7,10 @@ import SpotlightCard from '../components/SpotlightCard'
 const academicTimeline = [
   {
     period: '2024 – Present',
-    title: "Master's in Computer Science",
+    title: "Bachelor's in Computer Science",
     institution: 'FINKI — Ss. Cyril and Methodius University',
     description:
-      'Pursuing advanced studies in AI, machine learning, and software engineering. Focusing on multi-agent systems and AI-powered application development.',
+      'Pursuing studies in AI, machine learning, and software engineering. Focusing on multi-agent systems and AI-powered application development.',
   },
   {
     period: '2020 – 2024',
